@@ -115,6 +115,7 @@
 
         <xsl:call-template name="page-template-even-white">
             <xsl:with-param name="masterPage">normal-page</xsl:with-param>
+            <xsl:with-param name="showPageNumber">false</xsl:with-param>
             <xsl:with-param name="contents">
                 <xsl:call-template name="colophony"/>
             </xsl:with-param>

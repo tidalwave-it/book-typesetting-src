@@ -295,24 +295,27 @@
         </fo:block-container>                
     </xsl:template>
 
-    <xsl:template name="species-and-location">
-        <xsl:param name="species"/>
-        <xsl:param name="location"/>
+    <xsl:template name="comment-page">
+        <xsl:param name="fragment"/>
+        <xsl:param name="placeHolder1"/>
+        <xsl:param name="value1"/>
+        <xsl:param name="placeHolder2"/>
+        <xsl:param name="value2"/>
         
         <xsl:variable name="serializedNode">
-            <xsl:apply-templates select="/pb:photobook/pb:fragment[@id='species-and-location']/*" mode="serializer"/>
+            <xsl:apply-templates select="/pb:photobook/pb:fragment[@id='{$fragment}']/*" mode="serializer"/>
         </xsl:variable>
         <xsl:variable name="temp">
             <xsl:call-template name="replace-substring">
                 <xsl:with-param name="original">
                     <xsl:call-template name="replace-substring">
                         <xsl:with-param name="original" select="$serializedNode"/>
-                        <xsl:with-param name="substring">@location</xsl:with-param>
-                        <xsl:with-param name="replacement" select="$location"/>
+                        <xsl:with-param name="substring" select="$placeHolder1"/>
+                        <xsl:with-param name="replacement" select="$value1"/>
                     </xsl:call-template>
                 </xsl:with-param>
-                <xsl:with-param name="substring">@species</xsl:with-param>
-                <xsl:with-param name="replacement" select="$species"/>
+                <xsl:with-param name="substring" select="$placeHolder2"/>
+                <xsl:with-param name="replacement" select="$value2"/>
             </xsl:call-template>
         </xsl:variable>
                                 <!-- FIXME: refactor so you don't use an external file -->

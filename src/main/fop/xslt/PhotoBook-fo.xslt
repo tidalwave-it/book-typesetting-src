@@ -142,9 +142,12 @@
         <xsl:call-template name="page-template-even-white">
             <xsl:with-param name="masterPage">white-page</xsl:with-param>
             <xsl:with-param name="contents">
-                <xsl:call-template name="species-and-location">
-                    <xsl:with-param name="species" select="pb:species"/>
-                    <xsl:with-param name="location" select="pb:location"/>
+                <xsl:call-template name="comment-page">
+                    <xsl:with-param name="fragment">species-and-location</xsl:with-param>
+                    <xsl:with-param name="placeHolder1">@location</xsl:with-param>
+                    <xsl:with-param name="value1" select="pb:species"/>
+                    <xsl:with-param name="placeHolder2">@species</xsl:with-param>
+                    <xsl:with-param name="value2" select="pb:location"/>
                 </xsl:call-template>                
             </xsl:with-param>
         </xsl:call-template> 
