@@ -1,0 +1,53 @@
+
+<fop version="1.0">
+
+    <base>./</base>
+    <font-base>./target/fonts</font-base>
+
+    <renderers>
+        <renderer mime="application/pdf">
+            
+            <output-profile>target/icc/Blurb_ICC_Profile.icc</output-profile>
+  
+            <fonts>
+                <font metrics-url="Lusitana/Lusitana-Regular.xml"  
+                      kerning="yes" 
+                      embed-url="Lusitana/Lusitana-Regular.ttf">
+                    <font-triplet name="Lusitana" style="normal" weight="normal"/>
+                </font>                
+                <font metrics-url="Lusitana/Lusitana-Bold.xml"  
+                      kerning="yes" 
+                      embed-url="Lusitana/Lusitana-Bold.ttf">
+                    <font-triplet name="Lusitana" style="normal" weight="bold"/>
+                </font>
+
+                <font metrics-url="Muli/Muli-Light.xml"  
+                      kerning="yes" 
+                      embed-url="Muli/Muli-Light.ttf">
+                    <font-triplet name="Muli" style="normal" weight="300"/>
+                </font>
+                <font metrics-url="Muli/Muli-Regular.xml"  
+                      kerning="yes" 
+                      embed-url="Muli/Muli-Regular.ttf">
+                    <font-triplet name="Muli" style="normal" weight="400"/>
+                </font>
+                <font metrics-url="Muli/Muli-LightItalic.xml"  
+                      kerning="yes" 
+                      embed-url="Muli/Muli-LightItalic.ttf">
+                    <font-triplet name="Muli" style="italic" weight="300"/>
+                </font>
+                <font metrics-url="Muli/Muli-Italic.xml"  
+                      kerning="yes" 
+                      embed-url="Muli/Muli-Italic.ttf">
+                    <font-triplet name="Muli" style="italic" weight="400"/>
+                </font>
+                
+                <font metrics-url="Gruppo/Gruppo-Regular.xml"  
+                      kerning="yes" 
+                      embed-url="Gruppo/Gruppo-Regular.ttf">
+                    <font-triplet name="Gruppo" style="normal" weight="400"/>
+                </font>
+            </fonts>
+        </renderer>
+    </renderers>
+</fop>

@@ -48,6 +48,14 @@
                                     <directory>src/main/fop</directory>
                                     <targetPath>fop</targetPath>
                                 </resource>
+                                <resource>
+                                    <directory>src/main/fonts</directory>
+                                    <targetPath>fonts</targetPath>
+                                </resource>
+                                <resource>
+                                    <directory>src/main/icc</directory>
+                                    <targetPath>icc</targetPath>
+                                </resource>
                             </resources>
                         </configuration>
                     </execution>
