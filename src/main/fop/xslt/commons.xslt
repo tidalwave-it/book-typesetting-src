@@ -295,15 +295,20 @@
         </fo:block-container>                
     </xsl:template>
 
-    <xsl:template name="comment-page">
-        <xsl:param name="fragment"/>
+    <!-- ***************************************************************************************************************
+    *
+    *
+    *
+    **************************************************************************************************************** -->
+    <xsl:template name="templated-text">
+        <xsl:param name="template"/>
         <xsl:param name="placeHolder1"/>
         <xsl:param name="value1"/>
         <xsl:param name="placeHolder2"/>
         <xsl:param name="value2"/>
         
         <xsl:variable name="serializedNode">
-            <xsl:apply-templates select="/pb:photobook/pb:fragment[@id='{$fragment}']/*" mode="serializer"/>
+            <xsl:apply-templates select="/pb:photobook/pb:fragment[@id=$template]/*" mode="serializer"/>
         </xsl:variable>
         <xsl:variable name="temp">
             <xsl:call-template name="replace-substring">
