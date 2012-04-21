@@ -1,0 +1,120 @@
+<!-- Blurb.com Orizzontale standard 25x20 cm, copertina rigida con sovracoperta, carta standard -->
+<formats>
+        
+    <!--
+    See http://www.blurb.com/make/pdf_to_book/booksize_calculator#book-attributes
+    
+    PAGE:
+    Final, exported should measure (w x h)                          693 x 594
+    Page size / trim line (w x h)                                   684 x 576
+    Bleed (top, bottom, and outside edges)                          9
+    Inset for Margins / Safe boundary (Top, Bottom, Outside Edge)   18
+    Inset for Margins / Safe boundary (Binding Edge)                45
+    
+    COVER:
+    Final, exported should measure (w x h)                          2087 x 612
+    Total Page size / trim line (w x h)                             2069 x 594
+    Bleed (all edges)                                               9
+    Flaps (w x h, measured from trim edge to fold)                  298 x 612
+    Gutter / Spine (w x h)                                          41 x 612
+    Inset for Margins / Safe boundary (from edge of trim)           18
+    -->
+
+    <format id="blurb:standard landscape:hardcover,dust jacket:standard paper">
+        <pageWidth>693</pageWidth>
+        <pageHeight>594</pageHeight>
+        <bleed>9</bleed>
+        <safeBoundaryMargin>18</safeBoundaryMargin>
+        <safeBoundaryBindingMargin>45</safeBoundaryBindingMargin>
+        <gutterWidth>41</gutterWidth> <!-- for 80 pages -->
+        <coverWidth>2087</coverWidth>
+        <coverHeight>612</coverHeight>
+        <insideFlapWidth>298</insideFlapWidth>
+        <safeCoverMargin>72</safeCoverMargin>                       <!-- 1"            -->
+    </format>
+    
+<!--
+Page Specifications	Points
+Final, exported should measure (w x h)	693 x 594
+Page size / trim line (w x h)	684 x 576
+Bleed (top, bottom, and outside edges)	9
+Inset for Margins / Safe boundary (Top, Bottom, Outside Edge)	18
+Inset for Margins / Safe boundary (Binding Edge)	45
+Cover Specifications	Points
+Final, exported should measure (w x h)	1399 x 594
+Total Page size / trim line (w x h)	1381 x 576
+Bleed (all edges)	9
+Flaps (w x h, measured from trim edge to fold)	none
+Gutter / Spine (w x h)	13 x 594
+Inset for Margins / Safe boundary (from edge of trim)	18
+-->
+    <format id="blurb:standard landscape:softcover:standard paper">
+        <pageWidth>693</pageWidth>
+        <pageHeight>594</pageHeight>
+        <bleed>9</bleed>
+        <safeBoundaryMargin>18</safeBoundaryMargin>
+        <safeBoundaryBindingMargin>45</safeBoundaryBindingMargin>
+        <gutterWidth>13</gutterWidth> <!-- for 80 pages -->
+        <coverWidth>1399</coverWidth>
+        <coverHeight>594</coverHeight>
+        <insideFlapWidth>0</insideFlapWidth>
+        <safeCoverMargin>72</safeCoverMargin>                       <!-- 1"            -->
+    </format>
+
+<!--
+Page Specifications	Points
+Final, exported should measure (w x h)	909 x 783
+Page size / trim line (w x h)	900 x 765
+Bleed (top, bottom, and outside edges)	9
+Inset for Margins / Safe boundary (Top, Bottom, Outside Edge)	18
+Inset for Margins / Safe boundary (Binding Edge)	45
+Cover Specifications	Points
+Final, exported should measure (w x h)	2519 x 801
+Total Page size / trim line (w x h)	2501 x 783
+Bleed (all edges)	9
+Flaps (w x h, measured from trim edge to fold)	299 x 801
+Gutter / Spine (w x h)	41 x 801
+Inset for Margins / Safe boundary (from edge of trim)	18
+-->
+    <format id="blurb:large format landscape:hardcover,dust jacket:standard paper">
+        <pageWidth>909</pageWidth>
+        <pageHeight>783</pageHeight>
+        <bleed>9</bleed>
+        <safeBoundaryMargin>18</safeBoundaryMargin>
+        <safeBoundaryBindingMargin>45</safeBoundaryBindingMargin>
+        <gutterWidth>41</gutterWidth> <!-- for 80 pages -->
+        <coverWidth>2519</coverWidth>
+        <coverHeight>801</coverHeight>
+        <insideFlapWidth>299</insideFlapWidth>
+        <safeCoverMargin>72</safeCoverMargin>                       <!-- 1"            -->
+    </format>
+
+    <!-- See http://www.viovio.com/wiki/Cropping+And+Bleed 
+             http://www.viovio.com/wiki/Book+Cover+Specifications
+             http://www.viovio.com/photos/gallery/15157
+    -->
+    <!-- 1" = 72 pt -->
+    <format id="viovio:11x8.5:imagewrap hardcover:premium">
+        <pageWidth>810</pageWidth>                                  <!-- 11" + 0.25"   -->
+        <pageHeight>630</pageHeight>                                <!-- 8.5" + 0.25"  -->
+        <bleed>9</bleed>                                            <!-- 1/8"          -->
+        <safeBoundaryMargin>18</safeBoundaryMargin>                 <!-- 1/4"          -->
+        <safeBoundaryBindingMargin>18</safeBoundaryBindingMargin>   <!-- 1/4"          -->
+        <gutterWidth>31</gutterWidth>                               <!-- 0.44"         -->
+        <coverWidth>1620</coverWidth>
+        <coverHeight>630</coverHeight>
+        <insideFlapWidth>0</insideFlapWidth>
+        <safeCoverMargin>63</safeCoverMargin>                       <!-- 1" - bleed    -->
+    </format>
+
+    <format id="eBook:12x8">
+        <pageWidth>864</pageWidth>
+        <pageHeight>576</pageHeight>
+        <bleed>0</bleed>
+        <safeBoundaryMargin>0</safeBoundaryMargin>
+        <safeBoundaryBindingMargin>0</safeBoundaryBindingMargin>
+        <safeCoverMargin>0</safeCoverMargin>                       
+    </format>
+    
+
+</formats>
