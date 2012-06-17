@@ -76,7 +76,7 @@ Flaps (w x h, measured from trim edge to fold)	none
 Gutter / Spine (w x h)	41 x 648
 Inset for Margins / Safe boundary (from edge of trim)	18
 -->
-    <format id="blurb:standard landscape:imagewrap:standard paper">
+    <format id="blurb:standard landscape:hardcover,imagewrap:standard paper">
         <pageWidth>693</pageWidth>
         <pageHeight>594</pageHeight>
         <bleed>9</bleed>
@@ -114,6 +114,34 @@ Inset for Margins / Safe boundary (from edge of trim)	18
         <coverWidth>2519</coverWidth>
         <coverHeight>801</coverHeight>
         <insideFlapWidth>299</insideFlapWidth>
+        <safeCoverMargin>72</safeCoverMargin>                       <!-- 1"            -->
+    </format>
+
+<!--
+Page Specifications	Points
+Final, exported should measure (w x h)	909 x 783
+Page size / trim line (w x h)	900 x 765
+Bleed (top, bottom, and outside edges)	9
+Inset for Margins / Safe boundary (Top, Bottom, Outside Edge)	18
+Inset for Margins / Safe boundary (Binding Edge)	45
+Cover Specifications	Points
+Final, exported should measure (w x h)	1921 x 837
+Total Page size / trim line (w x h)	1876.0 x 792.0
+Bleed (all edges)	22.5
+Flaps (w x h, measured from trim edge to fold)	none
+Gutter / Spine (w x h)	41 x 837
+Inset for Margins / Safe boundary (from edge of trim)	18
+-->
+    <format id="blurb:large format landscape:hardcover,imagewrap:standard paper"> 
+        <pageWidth>909</pageWidth>
+        <pageHeight>783</pageHeight>
+        <bleed>9</bleed>
+        <safeBoundaryMargin>18</safeBoundaryMargin>
+        <safeBoundaryBindingMargin>45</safeBoundaryBindingMargin>
+        <gutterWidth>41</gutterWidth> <!-- for 80 pages -->
+        <coverWidth>1921</coverWidth>
+        <coverHeight>837</coverHeight>
+        <insideFlapWidth>0</insideFlapWidth>
         <safeCoverMargin>72</safeCoverMargin>                       <!-- 1"            -->
     </format>
 
