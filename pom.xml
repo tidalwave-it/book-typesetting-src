@@ -11,7 +11,7 @@
  
     <groupId>net.stoppingdown.books</groupId>
     <artifactId>typesetting</artifactId>
-    <version>1.3</version>
+    <version>1.4-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>TypeSetting</name>
     
