@@ -10,7 +10,7 @@
         <relativePath/>
     </parent>
 
-    <groupId>net.stoppingdown.books</groupId>
+    <groupId>it.tidalwave-typesetting</groupId>
     <artifactId>typesetting</artifactId>
     <version>1.4-SNAPSHOT</version>
     <packaging>jar</packaging>
