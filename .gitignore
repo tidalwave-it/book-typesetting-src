@@ -1,0 +1,14 @@
+target/
+.repository
+.description
+.classpath
+.project
+.settings
+release.properties
+.orig.*
+.orig
+.chg.*
+.rej
+*.iml
+*.idea
+.DS_Store
